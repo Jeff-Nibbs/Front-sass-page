@@ -1,0 +1,161 @@
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-50);
+    background-image: linear-gradient(to right, transparent, var(--white-off));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
+  }
+  [aria-expanded="true"] ~ ul li a {
+    margin: var(--size-20);
+    color: var(--font-color-dark);
+    font-size: 18px;
+  }
+}
+/* Mobile */
+@media screen and (min-width: 520px) {
+  .form textarea,
+  .form .checkbox,
+  .hire-btn {
+    grid-column: 1 / 3;
+  }
+}
+@media screen and (max-width: 520px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .hero-wrapper {
+    display: grid;
+  }
+  .hero-box {
+    width: 100%;
+  }
+  .hero-box h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .google {
+    left: 0;
+    top: -100px;
+  }
+  .paypal {
+    top: 29px;
+    left: 0;
+  }
+  .atlassian {
+    top: -50px;
+    left: 104px;
+  }
+  .asana {
+    top: -100px;
+    left: 233px;
+  }
+  .weave {
+    top: 28px;
+    left: 194px;
+  }
+  .google-ads {
+    display: none;
+  }
+  .calendar {
+    display: none;
+  }
+  .key-benefits {
+    margin: 50px 0;
+  }
+  .call-to-wrapper {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+    row-gap: 30px;
+  }
+  .info-box h2 {
+    width: 100%;
+    font-size: 22px;
+  }
+  .img-box {
+    width: 90%;
+    justify-self: end;
+  }
+  .why-header {
+    padding: 0;
+  }
+  .why-header p {
+    width: 75%;
+    margin: auto;
+  }
+  .bloops-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .bloop {
+    position: relative;
+  }
+  .dot {
+    position: absolute;
+  }
+  .line {
+    height: 0;
+    width: 0;
+  }
+  .dot1::after {
+    position: relative;
+    left: 70px;
+    bottom: 0px;
+  }
+  .dot2::after {
+    position: relative;
+    left: 85px;
+    bottom: 0px;
+  }
+  .dot3::after {
+    position: relative;
+    left: 85px;
+    bottom: 0px;
+  }
+  .dot4::after {
+    position: relative;
+    left: 70px;
+    bottom: 0px;
+  }
+  .video-box {
+    padding: 0;
+  }
+  .director-pic-box {
+    margin: 40px 25px;
+  }
+  .director-pic-box .bg-dots {
+    top: 70px;
+    left: -163px;
+  }
+  .director-text-box {
+    margin: 20px 25px;
+  }
+  .trusted {
+    margin: 50px auto;
+  }
+  .trusted-box img {
+    width: 50px;
+  }
+  .price-wrapper {
+    flex-direction: column;
+  }
+  .right-box {
+    margin: 20px 0;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form textarea {
+    grid-column: 1 / 2;
+  }
+}

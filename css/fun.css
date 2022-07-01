@@ -1,0 +1,22 @@
+a.btn:hover, input.btn:hover, .benefit-card:hover {
+  transform: translateY(-5%);
+}
+.load1{
+  animation: loadIn ease-in-out 1s;
+}
+.load2 {
+  animation: loadIn ease-in-out 1.5s;
+}
+.load3 {
+  animation: loadIn ease-in-out 2s;
+}
+@keyframes loadIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
